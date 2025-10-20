@@ -1,0 +1,57 @@
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    tr {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ccc;
+    }
+    td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company Type</th>
+      <th>Description</th>
+      <th>Capital</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Company Type">Private Limited</td>
+      <td data-label="Description">Best for startups</td>
+      <td data-label="Capital">NPR 1,00,000</td>
+    </tr>
+    <tr>
+      <td data-label="Company Type">Public Limited</td>
+      <td data-label="Description">For larger companies</td>
+      <td data-label="Capital">NPR 1,00,00,000</td>
+    </tr>
+  </tbody>
+</table>

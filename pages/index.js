@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="hello this is dipen log" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Get started dipen shah by editing <code>pages/index.js</code>
         </p>
       </main>
 
